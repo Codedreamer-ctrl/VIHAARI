@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<html>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css"> 
+  <head>
+    <title>VIHAARI</title>
+    <link rel = "icon" href = "icon-1.png" type = "image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+
+  <body>
+    <style>
+      .test{
+         margin-bottom: 0px;
+         padding-bottom: 20px;
+         padding-left: 20px;
+         padding-right: 0px;
+         }
+    </style>
+    <!-- Navigation -->
+    <nav>
+      <style>
+        * {box-sizing: border-box;}
+        body {
+          margin: 0;
+          font-family: Arial, Helvetica, sans-serif;
+        }
+        .topnav {
+          overflow: hidden;
+          background-color: #e9e9e9;
+        }
+        .topnav a {
+          float: left;
+          display: block;
+          color: black;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+          font-size: 17px;
+        }
+        .topnav a:hover {
+          background-color: #ddd;
+          color: black;
+        }
+        .topnav a.active {
+          background-color: #2196F3;
+          color: white;
+        }
+        .topnav .search-container {
+          float: right;
+        }
+        .topnav input[type=text] {
+          padding: 6px;
+          margin-top: 8px;
+          font-size: 17px;
+          border: none;
+        }
+        .topnav .search-container button {
+          float: right;
+          padding: 6px 10px;
+          margin-top: 8px;
+          margin-right: 16px;
+          background: #ddd;
+          font-size: 17px;
+          border: none;
+          cursor: pointer;
+        }
+        .topnav .search-container button:hover {
+          background: #ccc;
+        }
+        @media screen and (max-width: 600px) {
+          .topnav .search-container {
+            float: none;
+          }
+          .topnav a, .topnav input[type=text], .topnav .search-container button {
+            float: none;
+            display: block;
+            text-align: left;
+            width: 100%;
+            margin: 0;
+            padding: 14px;
+          }
+          .topnav input[type=text] {
+            border: 1px solid #ccc;  
+          }
+        }
+        
+        body {
+          font-family: Arial, Helvetica, sans-serif;
+          margin: 0;
+        }
+        
+        .navbar {
+          overflow: hidden;
+          background-color: #333; 
+        }
+        
+        .navbar a {
+          float: left;
+          font-size: 16px;
+          color: white;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+        }
+        
+        .subnav {
+          float: left;
+          overflow: hidden;
+        }
+        
+        .subnav .subnavbtn {
+          font-size: 16px;  
+          border: none;
+          outline: none;
+          color: white;
+          padding: 14px 16px;
+          background-color: inherit;
+          font-family: inherit;
+          margin: 0;
+        }
+        
+        .navbar a:hover, .subnav:hover .subnavbtn {
+          background-color: #ff433a;
+          background: linear-gradient(to right, #FF4B2B, #FF416C);
+        }
+        
+        .subnav-content {
+          display: none;
+          position: absolute;
+          left: 0;
+          background-color: #ff433a;
+          background: linear-gradient(to right, #FF4B2B, #FF416C);
+          width: 100%;
+          z-index: 1;
+        }
+        
+        .subnav-content a {
+          float: left;
+          color: white;
+          text-decoration: none;
+        }
+        
+        .subnav-content a:hover {
+          background-color: #eee;
+          color: black;
+        }
+        
+        .subnav:hover .subnav-content {
+          display: block;
+        }
+      </style>
+      <div class="navbar">
+        <table cellspacing="30">
+          <tr>
+            <div class="w3-container w3-display-container w3-padding-5">
+              <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
+              <td><img src="icon-1.png" alt="VIHAARI" width="75" height="75"></td>
+              <td><h1 class="w3-wide"><b>VIHAARI</b></h1></td>
+              <td>
+                <a href="C:\Users\Sande\Projects from VS code\HelloWorld\index.html">Home</a>
+                <a href="C:\Users\Sande\Projects from VS code\HelloWorld\Feedback.html">Feedback</a>
+        <div class="subnav">
+          <button class="subnavbtn">About <i class="fa fa-caret-down"></i></button>
+          <div class="subnav-content">
+            <a href="#company">Company</a>
+            <a href="#team">Team</a>
+            <a href="#careers">Careers</a>
+          </div>
+        </div>
+        <a href="C:\Users\Sande\Projects from VS code\HelloWorld\Contactus.html">Contact Us</a>
+        <a href="C:\Users\Sande\Projects from VS code\HelloWorld\LoginSignUp.html">Login / Sign Up</a>
+              </td>
+            </div>
+          </tr>
+        </table>
+        <!--<a href="#home">Home</a>
+        <a href="C:\Users\Sande\Projects from VS code\HelloWorld\Feedback.html">Feedback</a>
+        <div class="subnav">
+          <button class="subnavbtn">About <i class="fa fa-caret-down"></i></button>
+          <div class="subnav-content">
+            <a href="#company">Company</a>
+            <a href="#team">Team</a>
+            <a href="#careers">Careers</a>
+          </div>
+        </div>
+        <a href="C:\Users\Sande\Projects from VS code\HelloWorld\Contactus.html">Contact Us</a>
+        <a href="C:\Users\Sande\Projects from VS code\HelloWorld\LoginSignUp.html">Login / Sign Up</a>-->
+        <!--Search Bar-->
+        <!--<div class="test">
+          <form action="/action_page.php" class="w3-right">
+            <input type="text" placeholder="Search.." name="search">
+            <button type="submit"><i class="fa fa-search"></i></button>
+          </form>
+        </div>-->
+      </div>
+    </nav>
+    <!--Slideshow-->
+    <style>
+      * {box-sizing: border-box}
+      body {font-family: Verdana, sans-serif; margin:0}
+      .mySlides {display: none}
+      img {vertical-align: middle;}
+      
+      /* Slideshow container */
+      .slideshow-container {
+        max-width: 2000px;
+        position: relative;
+        margin: auto;
+      }
+      
+      /* Next & previous buttons */
+      .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding: 16px;
+        margin-top: -22px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+      }
+      
+      /* Position the "next button" to the right */
+      .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+      }
+      
+      /* On hover, add a black background color with a little bit see-through */
+      .prev:hover, .next:hover {
+        background-color: rgba(0,0,0,0.8);
+      }
+      
+      /* Caption text */
+      .text {
+        color: #f2f2f2;
+        font-size: 15px;
+        padding: 8px 12px;
+        position: absolute;
+        bottom: 8px;
+        width: 100%;
+        text-align: center;
+      }
+      
+      /* Number text (1/3 etc) */
+      .numbertext {
+        color: #f2f2f2;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+      }
+      
+      /* The dots/bullets/indicators */
+      .dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+      }
+      
+      .active, .dot:hover {
+        background-color: #717171;
+      }
+      
+      /* Fading animation */
+      .fade {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 1.5s;
+        animation-name: fade;
+        animation-duration: 1.5s;
+      }
+      
+      @-webkit-keyframes fade {
+        from {opacity: .4} 
+        to {opacity: 1}
+      }
+      
+      @keyframes fade {
+        from {opacity: .4} 
+        to {opacity: 1}
+      }
+      
+      /* On smaller screens, decrease text size */
+      @media only screen and (max-width: 300px) {
+        .prev, .next,.text {font-size: 11px}
+      }
+    </style>
+    <div class="slideshow-container">
+
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 3</div>
+        <img src="VISAKHAPATNAM.jpg" style="width:100%">
+        <div class="text">Visakhapatnam</div>
+      </div>
+      
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <img src="TIRUPATI.jpg" style="width:100%">
+        <div class="text">Tirupati</div>
+      </div>
+      
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img src="VIJAYAWADA.jpg" style="width:100%">
+        <div class="text">Vijayawada</div>
+      </div>
+      
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      
+      </div>
+      <br>
+      
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span> 
+      </div>
+      <script>
+        var slideIndex = 0;
+        showSlides();
+        
+        function showSlides() {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}    
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+          setTimeout(showSlides, 5000); // Change image every 2 seconds
+        }
+      </script>
+    <section class="w3-container w3-left" style="max-width:2000px">
+      <p class="w3-opacity"><i>About Andhra Pradesh</i></p>
+    </section>
+    <section class="w3-container w3-content w3-left w3-white" style="max-width:2000px">
+      <p class="w3-justify">Situated in the southeastern coast of India, <strong>Andhra Pradesh</strong> is 
+        the 4th largest State of India. The capital of the state was Hyderabad which is also the largest city
+         here. However, due to the announcement of the recently formed Telangana State, Hyderabad will be a 
+         part and capital of Telangana from the 2nd of June 2014. The State of Hyderabad will continue to 
+         function as the State Capital of Andhra Pradesh for a period not exceeding 10 years till a new 
+         capital is determined. The state of Andhra Pradesh is mentioned since 800 BC in the Sanskrit Epics 
+         like Aitareya Brahmana and Mahabharata. The native language ‘<em><strong>Telugu</strong></em>’ is 
+         often associated with the Early Cholas. Andhra Pradesh also came under the rule of the Maurya 
+         Empire, the Ikshvaku Dynasty, Pallava, Rashtrakutas, Chalukyas and Later Cholas. When it comes to 
+         geography, Andhra covers most of the eastern part of the Deccan plateau and the eastern plains of 
+         the Eastern Ghats. The Eastern Ghats being a mineral rich area is covered with thick vegetation and 
+         the two regions are connected by patch of sparse vegetation. The State of Andhra Pradesh is well 
+         promoted by their tourism department and is well known for its rich natural resources, temples and 
+         rivers. The state of Andhra also shares a part of the coastal areas of the Bay of Bengal. The rich 
+         cultural heritage, ancient architecture and historical importance have made Andhra Pradesh one of 
+         the top tourist destinations in India. We shall discuss in brief the top <strong><strong>15 places 
+         to visit in the State of Andhra Pradesh.
+    </section>
+    <section class="w3-container w3-left" style="max-width:1000px">
+      <br>
+      <hr>
+      <h2 class="w3-wide"><strong>TOP 15 PLACES TO VISIT IN ANDHRA PRADESH</strong></h2>
+    </section>
+    <!--<section class="w3-row-padding w3-center w3-light-grey">
+      <article class="w3-third">
+        <p>1. VISAKHAPATNAM</p>
+        <img src="VISAKHAPATNAM.jpg" alt="Visakhapatnam" style="width:100%" width="400" height="400">
+        <p>John is the smartest.</p>
+      </article>
+      <article class="w3-third">
+        <p>2. TIRUPATI</p>
+        <img src="TIRUPATI.jpg" alt="Tirupati" style="width:100%" width="400" height="400">
+        <p>Paul is the prettiest.</p>
+      </article>
+      <article class="w3-third">
+        <p>3. VIJAYAWADA</p>
+        <img src="VIJAYAWADA.jpg" alt="Vijayawada" style="width:100%" width="400" height="400">
+        <p>Ringo is the funniest.</p>
+      </article>
+    </section>-->
+    <section class="w3-row-padding w3-left w3-light-grey">
+      <style type="text/css">
+
+
+        *{
+         margin: 0px;
+         padding: 0px;
+        }
+        body{
+          font-family: manrope,sans-serif;
+        }
+        .main{
+        
+         margin: 2%;
+        }
+        
+        .card{
+             width: 45%;
+             display: inline-block;
+             box-shadow: 2px 2px 20px black;
+             border-radius: 5px; 
+             margin: 2%;
+            }
+        
+        .image img{
+          width: 100%;
+          height: 480px;
+          object-fit: cover;
+          padding-bottom: 20px;
+          border-top-right-radius: 5px;
+          border-top-left-radius: 5px;
+          
+        
+         
+         }
+        
+        .title{
+         
+          text-align: center;
+          padding: 10px;
+          
+         }
+        
+        h1{
+          font-size: 20px;
+         }
+        
+        .des{
+          padding-right: 20px;
+          text-align: left;
+         
+          padding-top: 10px;
+          padding-left: 20px;
+          border-bottom-right-radius: 5px;
+          border-bottom-left-radius: 5px;
+        }
+        .readmore_button{
+          margin-top: 30px;
+          color: white;
+          margin-bottom: 10px;
+          background-color: #ff433a;
+          background-image: linear-gradient(to right,#ff433a,#ff577c);
+          border: 1px solid black;
+          border-radius: 5px;
+          padding:10px;
+          cursor:pointer;
+          font-weight: 700;
+          }
+        button:hover{
+          background-color: black;
+          color: white;
+          transition: .5s;
+          cursor: pointer;
+        }
+        
+      </style>
+      <br>
+      <div class="main">
+
+        <!--cards -->
+       
+       <div class="card">
+       
+       <div class="image">
+          <img src="VISAKHAPATNAM-1.jpg">
+       </div>
+       <div class="title">
+        <h1><strong>1. VISAKHAPATNAM</strong></h1>
+       </div>
+       <div class="des">
+        <p class="w3-justify"><strong>Visakhapatnam</strong> is the largest city in Andhra Pradesh. The climate is tropical and humidity 
+          is high throughout the year. The city has all the necessary attractions and resources to make it 
+          one of the top tourist destinations in India. Its various beaches, hilltops and a wildlife 
+          sanctuary attract a major tourist crowd. The place is the major port of the Indian National Army 
+          and is the deepest ports of India. There are various valleys like the Araku valley, which is a 
+          picturesque location...</p>
+          <br>
+        <p>Best time: September - March</p>
+       <button class="readmore_button">Read More</button>
+       </div>
+       </div>
+       <!--cards -->
+       
+       
+       <div class="card">
+       
+       <div class="image">
+          <img src="TIRUPATI-1.jpg">
+       </div>
+       <div class="title">
+        <h1><strong>2. TIRUPATI</strong></h1>
+       </div>
+       <div class="des">
+        <p class="w3-justify">Tirupati is one of the major cultural and religious pilgrimage spots in India.  The town is famous for its temple dedicated to ‘Balaji’, a form of Lord Vishnu. The temple’s 
+          foundation history is unknown and it was expanded over the centuries by various kingdoms and 
+          dynasties including the Chola, Pallava and the Vijaynagar Empire. Apart from the temples, there are 
+          various other attractions like parks and zoos. The temple is one of the major piligrimage spots in 
+          India and especially in...</p>
+        <br>
+        <p>Best time: September - March</p>
+        <button class="readmore_button">Read More</button>
+       </div>
+       </div>
+       <!--cards -->
+       
+       
+       <div class="card">
+       
+       <div class="image">
+          <img src="AMARAVATHI-1.jpg">
+       </div>
+       <div class="title">
+        <h1><strong>3. AMARAVATHI</strong></h1>
+       </div>
+       <div class="des">
+        <p class="w3-justify">Known as the Capital of Andhra Pradesh, Amaravathi is a planned city on the banks of the River 
+          Krishna. Amaravathi is renowned for being a site of a Buddhist Stupa that is a semi-hemispherical 
+          structure containing Buddhist relics and often called the Abode of God. Pilgrims visit this town 
+          almost throughout the year owing to the number of temples and shrines that adorn the little town 
+          in different parts.</p>
+        <br>
+        <p>Best time: November - March</p>
+       <button class="readmore_button">Read More</button>
+       </div>
+       </div>
+       <!--cards -->
+       
+       
+       <div class="card">
+       
+       <div class="image">
+          <img src="ARAKU-VALLEY-1.jpg">
+       </div>
+       <div class="title">
+        <h1><strong>4. ARAKU VALLEY</strong></h1>
+       </div>
+       <div class="des">
+        <p class="w3-justify">Araku Valley is a comparatively unexplored hill station mostly visited by locals as a weekend 
+          getaway and is situated some 120 kilometres away from Vishakhapatnam. If you're a tourist looking 
+          for exclusivity and tranquillity, Vistadome train leaves Vishakhapatnam at 6.50 AM, making way 
+          through 58 tunnels and passing over 84 bridges making way through the breathtaking landscape 
+          to reach Araku in approximately in 5 hours</p>
+        <br>
+        <p>Best time: September - February</p>
+       <button class="readmore_button">Read More</button>
+       </div>
+       </div>
+       <!--cards -->
+
+
+       <div class="card">
+       
+        <div class="image">
+           <img src="ANANTHAGIRI-HILLS.jpg">
+        </div>
+        <div class="title">
+         <h1><strong>5. ANANTHAGIRI HILLS</strong></h1>
+        </div>
+        <div class="des">
+         <p class="w3-justify">Set amid the Eastern Ghats, Ananthagiri Hills is a beautiful retreat 90km away from Hyderabad 
+           city. One of the earliest human habitat areas, Ananthagiri is a hill town of ancient caves, 
+           temples, medieval fort palaces that showcases the history of the area. The place offers some of 
+           the best trekking trails and thus serves as a trekker's paradise. Breathtakingly gorgeous and 
+           absolutely scintillating, the town oozes...</p>
+         <br>
+         <p>Best time: October - March</p>
+        <button class="readmore_button">Read More</button>
+        </div>
+       </div>
+       <!--cards -->
+
+
+       <div class="card">
+       
+          <div class="image">
+             <img src="VIJAYAWADA.jpg">
+          </div>
+          <div class="title">
+           <h1><strong>6. VIJAYAWADA</strong></h1>
+          </div>
+          <div class="des">
+           <p class="w3-justify">Nestled on the banks of River Krishna in the state of Andhra Pradesh, 
+             Vijayawada is the second-largest populated city in the state. Known as the ‘commercial, 
+             political and media capital of Andhra Pradesh’, the city is one of the most rapidly growing 
+             urban cities in India. Covered by hills and canals, Vijayawada is also home to numerous caves 
+             and rock-cut temples carved out of these caves.</p>
+           <br>
+           <p>Best time: September - March</p>
+          <button class="readmore_button">Read More</button>
+          </div>
+       </div>
+       <!--cards -->
+
+
+       <div class="card">
+       
+        <div class="image">
+           <img src="GANDIKOTA.jpg">
+        </div>
+        <div class="title">
+         <h1><strong>7. GANDIKOTA</strong></h1>
+        </div>
+        <div class="des">
+         <p class="w3-justify">Endearingly known as the ‘Grand Canyon of India’, Gandikota is a twee village 
+           in Kadapa district of Andhra Pradesh. Flanked by River Pennar on the right side, the village is 
+           popular for the spectacular gorges formed by the river cutting through Erramala Hills. The narrow 
+           valleys with streams running between them and the steep rocky walls to give them company remind 
+           one of the renowned Grand Canyon in Arizona.</p>
+         <br>
+         <p>Best time: September - February</p>
+        <button class="readmore_button">Read More</button>
+        </div>
+       </div>
+       <!--cards -->
+
+
+       <div class="card">
+       
+        <div class="image">
+           <img src="ANANTAPUR.jpg">
+        </div>
+        <div class="title">
+         <h1><strong>8. ANANTAPUR</strong></h1>
+        </div>
+        <div class="des">
+         <p class="w3-justify">Anantapuram is the headquarters of Anantapur District in the Indian state of 
+           Andhra Pradesh. Anantapuram is not a cosmopolitan city. Neither is it a village. It is one of 
+           those towns in transition, that is at the confluence of the past and the future. Anantapuram 
+           reverberates with flashes of India's glorious history and the true ethnic traditions and values 
+           of India. Interestingly, Anantapur receives the second-lowest rainfall in India.</p>
+         <br>
+         <p>Best time: November - February</p>
+        <button class="readmore_button">Read More</button>
+        </div>
+       </div>
+       <!--cards -->
+
+
+       <div class="card">
+       
+        <div class="image">
+           <img src="KURNOOL.jpg">
+        </div>
+        <div class="title">
+         <h1><strong>9. KURNOOL</strong></h1>
+        </div>
+        <div class="des">
+         <p class="w3-justify">A place of much historical value with beautiful surrounding areas, Kurnool, 
+           is a small town in Andhra Pradesh where much of history left its imprints. The city also is known 
+           as The Gateway of Rayalaseema. Kurnool has in its domain remains of the palace of Gopal Raju 
+           (the last Hindu king), ruins of a medieval fort built by Vijaynagar Empire having ancient Persian 
+           and Arabic inscriptions and the summer palace built by Kurnool rulers...</p>
+         <br>
+         <p>Best time: December - February</p>
+        <button class="readmore_button">Read More</button>
+        </div>
+       </div>
+       <!--cards -->
+
+
+       <div class="card">
+       
+        <div class="image">
+           <img src="GUNTUR.jpg">
+        </div>
+        <div class="title">
+         <h1><strong>10. GUNTUR</strong></h1>
+        </div>
+        <div class="des">
+         <p class="w3-justify">Known as the Land of Chillies, Guntur is famous for its massive chilli market 
+           yard in Asia. It is the third most populous town in Andhra Pradesh located at a distance of 30kms 
+           from the newly coined capital Amaravathi. With a busy industrial scenario, Guntur forms part of 
+           the prominent Vishakhapatnam-Guntur Industrial corridor. It is also renowned as a textile and 
+           transport hub in India. Once home to numerous great dynasties... </p>
+         <br>
+         <p>Best time: October - March</p>
+        <button class="readmore_button">Read More</button>
+        </div>
+       </div>
+       <!--cards -->
+
+
+       <div class="card">
+       
+        <div class="image">
+           <img src="SRISAILAM.jpg">
+        </div>
+        <div class="title">
+         <h1><strong>11. SRISAILAM</strong></h1>
+        </div>
+        <div class="des">
+         <p class="w3-justify">Srisailam, a hill town in Kurnool district of Andhra Pradesh is home to the 
+           holy Malikarjuna Jyotirlinga and also as one of the eighteen Shakti Peethas of goddess Parvati. 
+           Situated on the banks of river Krishna, Srisailam is identified with a wildlife sanctuary and a 
+           dam. You could seek the blessings of the almighty by visiting the many majestic temples in the 
+           city such as the one dedicated to Lord Shiva</p>
+         <br>
+         <p>Best time: October - February</p>
+        <button class="readmore_button">Read More</button>
+        </div>
+       </div>
+       <!--cards -->
+
+
+       <div class="card">
+       
+        <div class="image">
+           <img src="CHITTOOR.jpg">
+        </div>
+        <div class="title">
+         <h1><strong>12. CHITTOOR</strong></h1>
+        </div>
+        <div class="des">
+         <p class="w3-justify">Steeped in religion, devotion and architecture, Chittoor is a place that 
+           everyone should visit at least once in their lifetime. Also blessed with scenic beauty, cascading 
+           waterfalls and a beautiful hill station, Chittoor is not a disappointment to the traveller who 
+           seeks redemption from the busy metro life. Also known as the Mango City, Chittoor offers myriad 
+           varities of heavenly mangoes to please its visitors.</p>
+         <br>
+         <p>Best time: September - February</p>
+        <button class="readmore_button">Read More</button>
+        </div>
+       </div>
+       <!--cards -->
+
+
+       <div class="card">
+       
+        <div class="image">
+           <img src="KAKINADA.jpg">
+        </div>
+        <div class="title">
+         <h1><strong>13. KAKINADA</strong></h1>
+        </div>
+        <div class="des">
+         <p class="w3-justify">A city with a perfect blend of cosmopolitan lifestyle and old-world charm, 
+           Kakinada in Andhra Pradesh is blessed with the best of both the cultures. One side showcases the 
+           rich cultural heritage, while the other side will leave you in awe of its success in 
+           industrialization and architectural grandeur. Often referred to as the fertilizer city, Kakinada 
+           is a well planned industrial hub where urban lifestyle comes handy with the development. </p>
+         <br>
+         <p>Best time: October - March</p>
+        <button class="readmore_button">Read More</button>
+        </div>
+       </div>
+       <!--cards -->
+
+
+       <div class="card">
+       
+        <div class="image">
+           <img src="NELLORE.jpg">
+        </div>
+        <div class="title">
+         <h1><strong>14. NELLORE</strong></h1>
+        </div>
+        <div class="des">
+         <p class="w3-justify">Nellore is a beautiful city lying on the banks of River Penna, a Municipal 
+           Corporation in the South Indian state of Andhra Pradesh. Anciently known as Vikrama Simhapuri, 
+           it derived its name from "Nelluru", a combination of Tamil words "Nel" and "Ooru" where Nel stands
+           for Paddy and Ooru means Place. This city, situated on the banks of the Penne River is known for 
+           its rich agriculture and has been an exporter of Rice, Sugar cane</p>
+         <br>
+         <p>Best time: October - February</p>
+        <button class="readmore_button">Read More</button>
+        </div>
+       </div>
+       <!--cards -->
+
+
+       <div class="card">
+       
+        <div class="image">
+           <img src="LEPAKSHI.jpg">
+        </div>
+        <div class="title">
+         <h1><strong>15. LEPAKSHI</strong></h1>
+        </div>
+        <div class="des">
+         <p class="w3-justify">Lepakshi is a small quaint village with a trail of several great kingdoms that
+            once ruled the area. Located in the Anantpur district of Andhra Pradesh, Lepakshi is located at 
+            a distance of 120 km from Bangalore making it a great choice for one day trip. Founded in 1535 AD
+            by Maharaja Aliya Rama Raya of the Vijayanagara empire, Lepakshi is a trove of several fascinating
+            archaeological sites, beautiful ancient temples and rich culture.</p>
+         <br>
+         <p>Best time: September - February</p>
+        <button class="readmore_button">Read More</button>
+        </div>
+       </div>
+       <!--cards -->
+      </div>
+    </section>
+    <!-- Footer -->
+    <!--<footer class="w3-container w3-padding-64 w3-center w3-white w3-xlarge">
+      <br>
+      <br>
+      <br>
+      <a href="https://www.facebook.com/andhrapradeshtourism"><i class="fa fa-facebook-official"></i></a>
+      <a href="https://twitter.com/Tourism_AP?s=15"><i class="fa fa-twitter"></i></a>
+      <a href="https://www.instagram.com/andhrapradeshtourism/"><i class="fa fa-instagram"></i></a>
+    </footer>-->
+    <footer>
+       <!-- Newsletter -->
+  <div class="w3-container">
+    <div class="w3-panel w3-padding-16 w3-black w3-opacity w3-card w3-hover-opacity-off">
+      <h2>Get the best offers first!</h2>
+      <p>Join our newsletter.</p>
+      <label>E-mail</label>
+      <input class="w3-input w3-border" type="text" placeholder="Your Email address">
+      <button type="button" class="w3-button w3-red w3-margin-top">Subscribe</button>
+    </div>
+  </div>
+  
+  <!-- Contact -->
+  <div class="w3-container">
+    <h2>Contact</h2>
+    <!--<p>Let us book your next trip!</p>-->
+    <i class="fa fa-map-marker" style="width:30px"></i>VIHAARI, Andhra Pradesh, India<br>
+    <i class="fa fa-phone" style="width:30px"></i> Phone: +91 151515<br>
+    <i class="fa fa-envelope" style="width:30px"> </i> Email: mail@mail.com<br>
+    <br>
+    <br>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Email" required name="Email"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message" required name="Message"></p>
+      <br>
+      <br>
+      <p><button class="w3-button w3-black w3-padding-large" type="submit">SEND MESSAGE</button></p>
+    </form>
+  </div>
+  
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-center w3-opacity w3-margin-bottom">
+  <h5>Find Us On</h5>
+  <div class="w3-xlarge w3-padding-16">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+</footer>
+
+<script>
+// Tabs
+function openLink(evt, linkName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("myLink");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+  }
+  document.getElementById(linkName).style.display = "block";
+  evt.currentTarget.className += " w3-red";
+}
+
+// Click on the first tablink on load
+document.getElementsByClassName("tablink")[0].click();
+</script>
+
+    </footer>
+  </body>
+</html>
